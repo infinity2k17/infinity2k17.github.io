@@ -1,0 +1,1232 @@
+* {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0; }
+
+.cf:after,
+.cf:before {
+  content: ' ';
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.no-wrap {
+  white-space: nowrap; }
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+address {
+  font-style: normal; }
+
+img {
+  border-style: none;
+  vertical-align: bottom; }
+
+fieldset {
+  border-style: none; }
+
+ol, ul {
+  list-style: none; }
+
+html {
+  overflow-x: hidden; }
+
+html, body {
+  height: 100%; }
+
+body {
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  background-color: white;
+  font: 300 62.5%/1em museo-sans, sans-serif;
+  letter-spacing: 0;
+  min-width: 320px;
+  text-size-adjust: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+#notices {
+  background-color: black;
+  bottom: 0;
+  display: none;
+  height: 60px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10000; }
+  #notices .message {
+    color: white;
+    text-align: center; }
+    #notices .message h2 {
+      font: 500 1.8em/1.2em museo-sans, sans-serif; }
+    #notices .message p {
+      font: 300 1.7em/1.5em museo-sans, sans-serif; }
+      #notices .message p a {
+        text-decoration: underline; }
+
+#no-script {
+  background-color: black;
+  display: none; }
+
+.no-js #notices,
+.no-js #no-script {
+  display: block; }
+
+#general-error {
+  background: white none no-repeat 50% 0;
+  background-size: 188.5px 80px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  top: 5%;
+  width: 90%; }
+  #general-error div {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 880px;
+    padding: 20px; }
+    #general-error div h1 {
+      background: transparent url() no-repeat 0 0;
+      background-size: 200px;
+      height: 30px;
+      margin: 0 auto 40px;
+      text-indent: -8000px;
+      width: 200px; }
+
+#container {
+  min-height: 100%;
+  position: relative; }
+
+header#page-header .infin-masthead-logo {
+  position: absolute;
+  z-index: 1000; }
+  header#page-header .infin-masthead-logo img {
+    bottom: 0;
+    height: auto;
+    left: 0;
+    margin: auto 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%; }
+
+header#page-header .infin-toc-link {
+ 
+  background-size: 23px 19px;
+  border-radius: 2px;
+  position: fixed;
+  text-indent: -8000px;
+  z-index: 1000; }
+
+html.about header#page-header .infin-masthead-logo {
+  background: transparent url() no-repeat 0 50%; }
+  html.about header#page-header .infin-masthead-logo a {
+    display: block; }
+  html.about header#page-header .infin-masthead-logo img {
+    display: none; }
+
+html.home header#page-header .infin-masthead-logo {
+  display: none; }
+
+footer#page-footer {
+  background-color: #1d1d1d; }
+  footer#page-footer h2.logo {
+    text-align: center; }
+    footer#page-footer h2.logo span {
+      background: transparent url("../images/infin111.png") no-repeat center c;
+     
+     display: inline-block;
+      text-indent: -8000px; }
+  footer#page-footer .footer {
+    border-top: 1px solid #252525; }
+    footer#page-footer .footer .lets-be-social, footer#page-footer .footer .legal {
+      float: left;
+      width: 100%; }
+    footer#page-footer .footer .legal {
+      text-align: center; }
+    footer#page-footer .footer span {
+      color: #787878; }
+    footer#page-footer .footer a:link, footer#page-footer .footer a:visited {
+      color: #787878; }
+    footer#page-footer .footer a:hover, footer#page-footer .footer a:active, footer#page-footer .footer a.active {
+      color: white; }
+
+nav#main-nav {
+  background-color: #f3d5cf;
+  height: 100%;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 100%;
+  z-index: 8000; }
+  nav#main-nav > div {
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%; }
+  nav#main-nav ul li {
+    text-align: center; }
+    nav#main-nav ul li a {
+      color: #212328;
+      padding: 10px; }
+    nav#main-nav ul li a:hover {
+      color: white; }
+    nav#main-nav ul li a.active {
+      text-decoration: line-through; }
+  nav#main-nav button#close-bn {
+    
+    background-size: 18px 18px;
+    border-radius: 2px;
+    border-style: none;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    text-indent: -8000px;
+    z-index: 1000; }
+
+#content .section {
+  position: relative; }
+
+#content .pre-footer {
+  color: #80807e;
+  text-align: center; }
+  #content .pre-footer a:link, #content .pre-footer a:visited {
+    color: #212328; }
+  #content .pre-footer a:hover, #content .pre-footer a:active {
+    border-bottom: 1px solid #212328; }
+
+#content a.pre-footer:link, #content a.pre-footer:visited {
+  -moz-transition: background-color linear .2s, color linear .2s;
+  -o-transition: background-color linear .2s, color linear .2s;
+  -webkit-transition: background-color linear .2s, color linear .2s;
+  background-color: white;
+  color: #212328;
+  display: block;
+  transition: background-color linear .2s, color linear .2s; }
+
+#content a.pre-footer:hover, #content a.pre-footer:active {
+  background-color: #212328;
+  color: white; }
+
+
+
+
+
+#content .our-project-portfolio {
+  background-color: #1d1d1d; }
+  #content .our-project-portfolio .item {
+    float: left;
+    overflow: hidden;
+    position: relative; }
+    #content .our-project-portfolio .item a {
+      display: block; }
+      #content .our-project-portfolio .item a img {
+        width: 100%; }
+      #content .our-project-portfolio .item a .overlay {
+        -moz-transition: opacity ease-in-out .5s;
+        -o-transition: opacity ease-in-out .5s;
+        -webkit-transition: opacity ease-in-out .5s;
+        background-color: #212328;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        transition: opacity ease-in-out .5s;
+        width: 100%; }
+        #content .our-project-portfolio .item a .overlay > div {
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%; }
+        #content .our-project-portfolio .item a .overlay h2 {
+          color: white; }
+        #content .our-project-portfolio .item a .overlay h3 {
+          color: #80807e; }
+    #content .our-project-portfolio .item a:hover .overlay {
+      opacity: .95; }
+    #content .our-project-portfolio .item a.active .overlay {
+      opacity: .95; }
+      #content .our-project-portfolio .item a.active .overlay > div h3 {
+        display: none; }
+
+#content .text-block {
+  text-align: center; }
+  #content .text-block .region {
+    margin: 0 auto; }
+  #content .text-block .columnar:before, #content .text-block .columnal:before,
+  #content .text-block .columnar:after, #content .text-block .columnal:after {
+    content: ' ';
+    display: table; }
+  #content .text-block .columnar:after, #content .text-block .columnal:after {
+    clear: both; }
+  #content .text-block .columnar, #content .text-block .columnal {
+    margin: 0 auto; }
+    #content .text-block .columnar > div, #content .text-block .columnal > div {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      float: left;
+      text-align: left;
+      width: 50%; }
+      #content .text-block .columnar > div h3.em, #content .text-block .columnal > div h3.em {
+        
+      background: transparent url() no-repeat 0 100%; }
+     
+      #content .text-block .columnar > div p, #content .text-block .columnal > div p {
+        font: 300 16px/30px museo-sans, sans-serif;
+        letter-spacing: 0.02em; }
+        #content .text-block .columnar > div p strong, #content .text-block .columnal > div p strong {
+          font-weight: inherit; }
+  #content .text-block h1, #content .text-block h2 {
+    text-transform: uppercase; }
+
+#content .text-block.infin-white .translucent, #content .text-block.infin-white .lucid,
+#content .text-block.infin-black .translucent,
+#content .text-block.infin-black .lucid {
+  opacity: .5; }
+
+#content .text-block.infin-white {
+  color: white; }
+  #content .text-block.infin-white a:hover, #content .text-block.infin-white a:active {
+    border-bottom: 1px solid white; }
+  #content .text-block.infin-white p.link a:link {
+    color: white;
+    text-transform: uppercase; }
+
+#content .text-block.infin-black {
+  color: #212328; }
+  #content .text-block.infin-black a:link, #content .text-block.infin-black a:visited {
+    color: #212328; }
+  #content .text-block.infin-black a:hover, #content .text-block.infin-black a:active {
+    border-bottom: 1px solid #212328; }
+  #content .text-block.infin-black p a.link:link, #content .text-block.infin-black p a.link:visited {
+    border-bottom: 1px solid #212328; }
+  #content .text-block.infin-black p.link a:link {
+    color: #212328;
+    text-transform: uppercase; }
+
+#content .image-block {
+  background: transparent none no-repeat center center fixed;
+
+  background-size: cover;
+  height: 100vmin; }
+
+#content a.next-section {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  bottom: 0;
+  display: block;
+  left: 50%;
+  position: absolute;
+  z-index: 200; }
+  #content a.next-section span {
+    
+    background-size: 20px 11px;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-indent: -8000px;
+    top: 0;
+    width: 100%; }
+
+#content .banner, #content .banner-block {
+  height: 100vmin;
+  position: relative; }
+  #content .banner .link, #content .banner-block .link {
+    cursor: pointer; }
+  #content .banner div.image, #content .banner-block div.image {
+    background: transparent none no-repeat 50% 50%;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    #content .banner div.image .caption, #content .banner-block div.image .caption {
+      position: absolute;
+      z-index: 100; }
+      #content .banner div.image .caption h2, #content .banner-block div.image .caption h2 {
+        color: #212328; }
+      #content .banner div.image .caption p, #content .banner-block div.image .caption p {
+        color: #80807e; }
+  #content .banner div.image:not(:first-child), #content .banner-block div.image:not(:first-child) {
+    opacity: 0; }
+  #content .banner .navigation-container, #content .banner-block .navigation-container {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 100; }
+    #content .banner .navigation-container .navigation, #content .banner-block .navigation-container .navigation {
+      background-color: white;
+      display: block;
+      float: left;
+      position: relative; }
+      #content .banner .navigation-container .navigation span, #content .banner-block .navigation-container .navigation span {
+        background-size: 11px 80px;
+        display: block;
+        left: 0;
+        position: absolute;
+        text-indent: -8000px;
+        top: 50%; }
+    #content .banner .navigation-container .navigation-previous, #content .banner-block .navigation-container .navigation-previous {
+      padding-right: 1px; }
+      #content .banner .navigation-container .navigation-previous span, #content .banner-block .navigation-container .navigation-previous span {
+        background-position: 50% -40px;
+        border-right: 1px solid #e6e6e6; }
+    #content .banner .navigation-container .navigation-next span, #content .banner-block .navigation-container .navigation-next span {
+      background-position: 50% 0; }
+
+#content .infin-home-logo {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: 1000; }
+
+#content .journal-entry .region h1, #content .journal-entry .region h2 {
+  text-transform: none; }
+  #content .journal-entry .region h1 a:link, #content .journal-entry .region h1 a:visited, #content .journal-entry .region h2 a:link, #content .journal-entry .region h2 a:visited {
+    border-style: none; }
+
+#content .journal-entry .region .journal-article {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  text-align: left; }
+  #content .journal-entry .region .journal-article p {
+    letter-spacing: 0.02em; }
+    #content .journal-entry .region .journal-article p strong {
+      font-weight: inherit; }
+
+#content .journal-entry .journal-images {
+  margin: 0 auto;
+  max-width: 1650px; }
+  #content .journal-entry .journal-images ol li:not(:last-child) {
+    margin-bottom: 4px; }
+
+#content .journal-entry .read-more a:link, #content .journal-entry .read-more a:visited {
+  border-bottom-style: none;
+  color: black;
+  text-transform: uppercase; }
+
+#content .journal-entry .read-more a:hover, #content .journal-entry .read-more a:active {
+  border-bottom: 1px solid black; }
+
+#content .journal-entry.journal-main {
+  margin-bottom: 0; }
+
+#content .journal-entries div.journal-entry:not(:first-child) {
+  border-top: 1px solid #e6e6e6; }
+
+#content .journal-paging {
+  overflow: hidden; }
+  #content .journal-paging ul {
+    float: left;
+    left: 50%;
+    position: relative; }
+    #content .journal-paging ul li {
+      float: left;
+      position: relative;
+      right: 50%; }
+      #content .journal-paging ul li a {
+       
+     
+        background-size: 44px 340px;
+        display: block;
+        text-indent: -8000px; }
+
+@media screen and (min-width: 1650px) {
+  .wrapper {
+    padding: 0 120px; }
+  header#page-header .infin-masthead-logo {
+    height: 60px;
+    left: 120px;
+    position: absolute;
+    top: 120px;
+    width: 200px; }
+  header#page-header .infin-toc-link {
+    height: 60px;
+    right: 120px;
+    top: 120px;
+    width: 64px; }
+  html.about header#page-header .infin-masthead-logo {
+    background-size: 200px; }
+    html.about header#page-header .infin-masthead-logo a {
+      height: 60px;
+      width: 200px; }
+  footer#page-footer h2.logo {
+    padding: 200px 0; }
+    footer#page-footer h2.logo span {
+      background-size: 200px 21px;
+      height: 21px;
+      width: 200px; }
+  footer#page-footer .footer {
+    padding: 19px 0 60px; }
+    footer#page-footer .footer span {
+      font: 300 1.4em/1.43em museo-sans, sans-serif; }
+    footer#page-footer .footer span:not(:last-child) {
+      margin-right: 20px; }
+  nav#main-nav ul li a {
+    font: 400 5em/1.3em tahoma, serif; }
+  nav#main-nav button#close-bn {
+    height: 60px;
+    right: 120px;
+    top: 120px;
+    width: 64px; }
+  #content .pre-footer {
+    font: 400 2.6em/1.43em tahoma, serif;
+    padding: 120px 120px; }
+  #content .our-project-portfolio .item {
+    width: 33.33%; }
+    #content .our-project-portfolio .item a .overlay h2 {
+      font: 300 1.6em/1em museo-sans, sans-serif; }
+    #content .our-project-portfolio .item a .overlay h3 {
+      font: 300 1.4em/1.7em museo-sans, sans-serif; }
+  #content .text-block .region {
+    width: 1000px; }
+  #content .text-block h1, #content .text-block h2 {
+    font: 500 16px/65px brandon-grotesque; }
+  #content .text-block p {
+    font: 400 50px/65px tahoma, serif; }
+  #content .text-block p.em {
+    font: 300 15px/65px museo-sans, sans-serif; }
+  #content .text-block p.link {
+    font: 500 16px/65px brandon-grotesque; }
+  #content .text-block .columnar, #content .text-block .columnal {
+    max-width: 1300px;
+    padding-top: 100px; }
+    #content .text-block .columnar > div h3, #content .text-block .columnal > div h3 {
+      font: 500 30px/1.2em tahoma, serif;
+      margin-bottom: 25px; }
+    #content .text-block .columnar > div h3.em, #content .text-block .columnal > div h3.em {
+      padding-bottom: 25px; }
+    #content .text-block .columnar > div p, #content .text-block .columnal > div p {
+      font: 300 16px/30px museo-sans, sans-serif; }
+    #content .text-block .columnar > div p:not(:last-child), #content .text-block .columnal > div p:not(:last-child) {
+      margin-bottom: 30px; }
+    #content .text-block .columnar > div:first-child, #content .text-block .columnal > div:first-child {
+      padding-right: 50px; }
+    #content .text-block .columnar > div:last-child, #content .text-block .columnal > div:last-child {
+      padding-left: 50px; }
+  #content .text-block .region:first-child,
+  #content .text-block .columnar:first-child,
+  #content .text-block .columnal:first-child {
+    padding-top: 350px; }
+  #content .text-block .region:last-child,
+  #content .text-block .columnar:last-child,
+  #content .text-block .columnal:last-child {
+    padding-bottom: 350px; }
+  #content a.next-section {
+    height: 78px;
+    margin-left: -38px;
+    width: 76px; }
+  #content .banner .image .caption, #content .banner-block .image .caption {
+    bottom: 30px;
+    left: 60px; }
+    #content .banner .image .caption h2, #content .banner-block .image .caption h2 {
+      font: 400 24px/24px tahoma, serif; }
+    #content .banner .image .caption p, #content .banner-block .image .caption p {
+      font: 300 14px/24px museo-sans, sans-serif; }
+  #content .banner .navigation-container .navigation, #content .banner-block .navigation-container .navigation {
+    height: 80px;
+    width: 80px; }
+    #content .banner .navigation-container .navigation span, #content .banner-block .navigation-container .navigation span {
+      height: 40px;
+      margin-top: -20px;
+      width: 80px; }
+  #content .infin-home-logo {
+    margin-left: -200px;
+    margin-top: -20px; }
+    #content .infin-home-logo img {
+      width: 400px; }
+  #content .text-block.journal-preamble .region {
+    padding-bottom: 200px; }
+  #content .journal-entries:first-child {
+    padding-top: 350px; }
+  #content .text-block.journal-entry .region {
+    padding: 0; }
+  #content .journal-entry.journal-main {
+    padding: 350px 0; }
+  #content .journal-entry {
+    margin-bottom: 160px; }
+    #content .journal-entry .region {
+      max-width: 1300px;
+      width: auto; }
+      #content .journal-entry .region h1, #content .journal-entry .region h2 {
+        font: 400 30px/1.2em tahoma, serif;
+        margin-bottom: 50px; }
+      #content .journal-entry .region .journal-article {
+        -moz-column-gap: 100px;
+        -webkit-column-gap: 100px;
+        column-gap: 100px;
+        padding-bottom: 160px; }
+        #content .journal-entry .region .journal-article p {
+          font: 300 16px/30px museo-sans, sans-serif; }
+        #content .journal-entry .region .journal-article p:not(:last-child) {
+          margin-bottom: 30px; }
+    #content .journal-entry .read-more {
+      margin-top: 160px; }
+      #content .journal-entry .read-more a {
+        font: 500 16px/1em brandon-grotesque; }
+  #content .journal-entries div.journal-entry:not(:first-child) {
+    padding-top: 160px; }
+  #content .journal-paging {
+    margin-bottom: 160px; }
+    #content .journal-paging ul li {
+      margin: 0 50px; }
+      #content .journal-paging ul li a {
+        display: block;
+        height: 85px;
+        width: 85px; }
+      #content .journal-paging ul li a.paging-previous {
+        background-position: 100% 0; }
+      #content .journal-paging ul li a.paging-previous.disabled {
+        background-position: 100% -85px; }
+      #content .journal-paging ul li a.paging-next {
+        background-position: 0 -170px; }
+      #content .journal-paging ul li a.paging-next.disabled {
+        background-position: 0 -255px; } }
+
+@media screen and (max-width: 1650px) {
+  .wrapper {
+    padding: 0 100px; }
+  header#page-header .infin-masthead-logo {
+    height: 60px;
+    left: 100px;
+    position: absolute;
+    top: 100px;
+    width: 200px; }
+  header#page-header .infin-toc-link {
+    height: 60px;
+    right: 100px;
+    top: 100px;
+    width: 64px; }
+  html.about header#page-header .infin-masthead-logo {
+    background-size: 200px; }
+    html.about header#page-header .infin-masthead-logo a {
+      height: 60px;
+      width: 200px; }
+  footer#page-footer h2.logo {
+    padding: 180px 0; }
+    footer#page-footer h2.logo span {
+      background-size: 200px 21px;
+      height: 21px;
+      width: 200px; }
+  footer#page-footer .footer {
+    padding: 19px 0 50px; }
+    footer#page-footer .footer span {
+      font: 300 1.4em/1.43em museo-sans, sans-serif; }
+    footer#page-footer .footer span:not(:last-child) {
+      margin-right: 20px; }
+  nav#main-nav ul li a {
+    font: 400 4em/1.5em tahoma, serif; }
+  nav#main-nav button#close-bn {
+    height: 60px;
+    right: 100px;
+    top: 100px;
+    width: 64px; }
+  #content .pre-footer {
+    font: 400 2.4em/1.43em tahoma, serif;
+    padding: 100px 100px; }
+  #content .our-project-portfolio .item {
+    width: 50%; }
+    #content .our-project-portfolio .item a .overlay h2 {
+      font: 300 1.6em/1em museo-sans, sans-serif; }
+    #content .our-project-portfolio .item a .overlay h3 {
+      font: 300 1.4em/1.7em museo-sans, sans-serif; }
+  #content .text-block .region {
+    width: 800px; }
+  #content .text-block h1, #content .text-block h2 {
+    font: 500 15px/60px brandon-grotesque; }
+  #content .text-block p {
+    font: 400 40px/60px tahoma, serif; }
+  #content .text-block p.em {
+    font: 300 14px/60px museo-sans, sans-serif; }
+  #content .text-block p.link {
+    font: 500 15px/60px brandon-grotesque; }
+  #content .text-block .columnar, #content .text-block .columnal {
+    max-width: 1000px;
+    padding-top: 80px; }
+    #content .text-block .columnar > div h3, #content .text-block .columnal > div h3 {
+      font: 500 28px/1.2em tahoma, serif;
+      margin-bottom: 20px; }
+    #content .text-block .columnar > div h3.em, #content .text-block .columnal > div h3.em {
+      padding-bottom: 20px; }
+    #content .text-block .columnar > div p, #content .text-block .columnal > div p {
+      font: 300 15px/28px museo-sans, sans-serif; }
+    #content .text-block .columnar > div p:not(:last-child), #content .text-block .columnal > div p:not(:last-child) {
+      margin-bottom: 28px; }
+    #content .text-block .columnar > div:first-child, #content .text-block .columnal > div:first-child {
+      padding-right: 50px; }
+    #content .text-block .columnar > div:last-child, #content .text-block .columnal > div:last-child {
+      padding-left: 50px; }
+  #content .text-block .region:first-child,
+  #content .text-block .columnar:first-child,
+  #content .text-block .columnal:first-child {
+    padding-top: 250px; }
+  #content .text-block .region:last-child,
+  #content .text-block .columnar:last-child,
+  #content .text-block .columnal:last-child {
+    padding-bottom: 250px; }
+  #content a.next-section {
+    height: 78px;
+    margin-left: -38px;
+    width: 76px; }
+  #content .banner .image .caption, #content .banner-block .image .caption {
+    bottom: 25px;
+    left: 50px; }
+    #content .banner .image .caption h2, #content .banner-block .image .caption h2 {
+      font: 400 24px/24px tahoma, serif; }
+    #content .banner .image .caption p, #content .banner-block .image .caption p {
+      font: 300 14px/24px museo-sans, sans-serif; }
+  #content .banner .navigation-container .navigation, #content .banner-block .navigation-container .navigation {
+    height: 80px;
+    width: 80px; }
+    #content .banner .navigation-container .navigation span, #content .banner-block .navigation-container .navigation span {
+      height: 40px;
+      margin-top: -20px;
+      width: 80px; }
+  #content .infin-home-logo {
+    margin-left: -200px;
+    margin-top: -20px; }
+    #content .infin-home-logo img {
+      width: 400px; }
+  #content .text-block.journal-preamble .region {
+    padding-bottom: 180px; }
+  #content .journal-entries:first-child {
+    padding-top: 250px; }
+  #content .text-block.journal-entry .region {
+    padding: 0; }
+  #content .journal-entry.journal-main {
+    padding-top: 250px; }
+  #content .journal-entry {
+    margin-bottom: 140px; }
+    #content .journal-entry .region {
+      max-width: 1000px;
+      width: auto; }
+      #content .journal-entry .region h1, #content .journal-entry .region h2 {
+        font: 400 28px/1.2em Arial, serif;
+        margin-bottom: 40px; }
+      #content .journal-entry .region .journal-article {
+        -moz-column-gap: 100px;
+        -webkit-column-gap: 100px;
+        column-gap: 100px;
+        padding-bottom: 140px; }
+        #content .journal-entry .region .journal-article p {
+          font: 300 15px/28px museo-sans, sans-serif; }
+        #content .journal-entry .region .journal-article p:not(:last-child) {
+          margin-bottom: 28px; }
+    #content .journal-entry .read-more {
+      margin-top: 140px; }
+      #content .journal-entry .read-more a {
+        font: 500 15px/1em brandon-grotesque; }
+  #content .journal-entries div.journal-entry:not(:first-child) {
+    padding-top: 140px; }
+  #content .journal-paging {
+    margin-bottom: 140px; }
+    #content .journal-paging ul li {
+      margin: 0 50px; }
+      #content .journal-paging ul li a {
+        display: block;
+        height: 85px;
+        width: 85px; }
+      #content .journal-paging ul li a.paging-previous {
+        background-position: 100% 0; }
+      #content .journal-paging ul li a.paging-previous.disabled {
+        background-position: 100% -85px; }
+      #content .journal-paging ul li a.paging-next {
+        background-position: 0 -170px; }
+      #content .journal-paging ul li a.paging-next.disabled {
+        background-position: 0 -255px; } }
+
+@media screen and (max-width: 1279px) {
+  .wrapper {
+    padding: 0 80px; }
+  header#page-header .infin-masthead-logo {
+    height: 60px;
+    left: 80px;
+    position: absolute;
+    top: 80px;
+    width: 200px; }
+  header#page-header .infin-toc-link {
+    height: 60px;
+    right: 80px;
+    top: 80px;
+    width: 64px; }
+  html.about header#page-header .infin-masthead-logo {
+    background-size: 200px; }
+    html.about header#page-header .infin-masthead-logo a {
+      height: 60px;
+      width: 200px; }
+  footer#page-footer h2.logo {
+    padding: 160px 0; }
+    footer#page-footer h2.logo span {
+      background-size: 200px 21px;
+      height: 21px;
+      width: 200px; }
+  footer#page-footer .footer {
+    padding: 19px 0 40px; }
+    footer#page-footer .footer span {
+      font: 300 1.4em/1.43em museo-sans, sans-serif; }
+    footer#page-footer .footer span:not(:last-child) {
+      margin-right: 20px; }
+  nav#main-nav ul li a {
+    font: 400 3.5em/1.43em tahoma, serif; }
+  nav#main-nav button#close-bn {
+    height: 60px;
+    right: 80px;
+    top: 80px;
+    width: 64px; }
+  #content .pre-footer {
+    font: 400 2.2em/1.43em tahoma, serif;
+    padding: 80px 80px; }
+  #content .our-project-portfolio .item {
+    width: 50%; }
+    #content .our-project-portfolio .item a .overlay h2 {
+      font: 300 1.6em/1em museo-sans, sans-serif; }
+    #content .our-project-portfolio .item a .overlay h3 {
+      font: 300 1.4em/1.7em museo-sans, sans-serif; }
+  #content .text-block .region {
+    width: 700px; }
+  #content .text-block h1, #content .text-block h2 {
+    font: 500 14px/50px brandon-grotesque; }
+  #content .text-block p {
+    font: 400 35px/50px tahoma, serif; }
+  #content .text-block p.em {
+    font: 300 13px/50px museo-sans, sans-serif; }
+  #content .text-block p.link {
+    font: 500 14px/50px brandon-grotesque; }
+  #content .text-block .columnar, #content .text-block .columnal {
+    max-width: 850px;
+    padding-top: 70px; }
+    #content .text-block .columnar > div h3, #content .text-block .columnal > div h3 {
+      font: 500 26px/1.2em tahoma, serif;
+      margin-bottom: 17.5px; }
+    #content .text-block .columnar > div h3.em, #content .text-block .columnal > div h3.em {
+      padding-bottom: 17.5px; }
+    #content .text-block .columnar > div p, #content .text-block .columnal > div p {
+      font: 300 14px/26px museo-sans, sans-serif; }
+    #content .text-block .columnar > div:first-child, #content .text-block .columnal > div:first-child {
+      padding-right: 40px; }
+    #content .text-block .columnar > div:last-child, #content .text-block .columnal > div:last-child {
+      padding-left: 40px; }
+  #content .text-block .region:first-child,
+  #content .text-block .columnar:first-child,
+  #content .text-block .columnal:first-child {
+    padding-top: 175px; }
+  #content .text-block .region:last-child,
+  #content .text-block .columnar:last-child,
+  #content .text-block .columnal:last-child {
+    padding-bottom: 175px; }
+  #content a.next-section {
+    height: 78px;
+    margin-left: -38px;
+    width: 76px; }
+  #content .banner .image .caption, #content .banner-block .image .caption {
+    bottom: 20px;
+    left: 40px; }
+    #content .banner .image .caption h2, #content .banner-block .image .caption h2 {
+      font: 400 24px/24px tahoma, serif; }
+    #content .banner .image .caption p, #content .banner-block .image .caption p {
+      font: 300 14px/24px museo-sans, sans-serif; }
+  #content .banner .navigation-container .navigation, #content .banner-block .navigation-container .navigation {
+    height: 80px;
+    width: 80px; }
+    #content .banner .navigation-container .navigation span, #content .banner-block .navigation-container .navigation span {
+      height: 40px;
+      margin-top: -20px;
+      width: 80px; }
+  #content .infin-home-logo {
+    margin-left: -125px;
+    margin-top: -13px; }
+    #content .infin-home-logo img {
+      width: 250px; }
+  #content .text-block.journal-preamble .region {
+    padding-bottom: 160px; }
+  #content .journal-entries:first-child {
+    padding-top: 175px; }
+  #content .text-block.journal-entry .region {
+    padding: 0; }
+  #content .journal-entry.journal-main {
+    padding-top: 175px; }
+  #content .journal-entry {
+    margin-bottom: 120px; }
+    #content .journal-entry .region {
+      max-width: 850px;
+      width: auto; }
+      #content .journal-entry .region h1, #content .journal-entry .region h2 {
+        font: 400 26px/1.2em tahoma, serif;
+        margin-bottom: 35px; }
+      #content .journal-entry .region .journal-article {
+        -moz-column-gap: 80px;
+        -webkit-column-gap: 80px;
+        column-gap: 80px;
+        padding-bottom: 120px; }
+        #content .journal-entry .region .journal-article p {
+          font: 300 14px/26px museo-sans, sans-serif; }
+        #content .journal-entry .region .journal-article p:not(:last-child) {
+          margin-bottom: 28px; }
+    #content .journal-entry .read-more {
+      margin-top: 120px; }
+      #content .journal-entry .read-more a {
+        font: 500 14px/1em brandon-grotesque; }
+  #content .journal-entries div.journal-entry:not(:first-child) {
+    padding-top: 120px; }
+  #content .journal-paging {
+    margin-bottom: 120px; }
+    #content .journal-paging ul li {
+      margin: 0 40px; }
+      #content .journal-paging ul li a {
+        display: block;
+        height: 85px;
+        width: 85px; }
+      #content .journal-paging ul li a.paging-previous {
+        background-position: 100% 0; }
+      #content .journal-paging ul li a.paging-previous.disabled {
+        background-position: 100% -85px; }
+      #content .journal-paging ul li a.paging-next {
+        background-position: 0 -170px; }
+      #content .journal-paging ul li a.paging-next.disabled {
+        background-position: 0 -255px; } }
+
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    padding: 0 60px; }
+  header#page-header .infin-masthead-logo {
+    height: 48px;
+    left: 60px;
+    position: absolute;
+    top: 60px;
+    width: 175px; }
+  header#page-header .infin-toc-link {
+    height: 48px;
+    right: 60px;
+    top: 60px;
+    width: 52px; }
+  html.about header#page-header .infin-masthead-logo {
+    background-size: 175px; }
+    html.about header#page-header .infin-masthead-logo a {
+      height: 48px;
+      width: 175px; }
+  footer#page-footer h2.logo {
+    padding: 140px 0; }
+    footer#page-footer h2.logo span {
+      background-size: 175px 18px;
+      height: 18px;
+      width: 200px; }
+  footer#page-footer .footer {
+    padding: 18px 0 30px; }
+    footer#page-footer .footer .lets-be-social, footer#page-footer .footer .legal {
+      text-align: center;
+      width: 100%; }
+    footer#page-footer .footer .lets-be-social {
+      margin-bottom: 1.5em; }
+    footer#page-footer .footer span {
+      font: 300 1.2em/1.66em museo-sans, sans-serif; }
+    footer#page-footer .footer span:not(:last-child) {
+      margin-right: 17px; }
+  nav#main-nav ul li a {
+    font: 400 3.2em/1.41em tahoma, serif; }
+  nav#main-nav button#close-bn {
+    height: 48px;
+    right: 60px;
+    top: 60px;
+    width: 52px; }
+  #content .pre-footer {
+    font: 400 2em/1.66em tahoma, serif;
+    padding: 60px 60px; }
+  #content .our-project-portfolio .item a .overlay h2 {
+    font: 300 1.4em/1em museo-sans, sans-serif; }
+  #content .our-project-portfolio .item a .overlay h3 {
+    font: 300 1.2em/1.66em museo-sans, sans-serif; }
+  #content .text-block .region {
+    width: 450px; }
+  #content .text-block h1, #content .text-block h2 {
+    font: 500 12px/45px brandon-grotesque; }
+  #content .text-block p {
+    font: 400 32px/45px tahoma, serif; }
+  #content .text-block p.em {
+    font: 300 13px/45px museo-sans, sans-serif; }
+  #content .text-block p.link {
+    font: 500 12px/45px brandon-grotesque; }
+  #content .text-block .columnar, #content .text-block .columnal {
+    max-width: 450px;
+    padding-top: 70px; }
+    #content .text-block .columnar > div, #content .text-block .columnal > div {
+      float: none;
+      text-align: center;
+      width: 100%; }
+      #content .text-block .columnar > div h3, #content .text-block .columnal > div h3 {
+        font: 500 26px/1.2em tahoma, serif;
+        margin-bottom: 17.5px; }
+      #content .text-block .columnar > div h3.em, #content .text-block .columnal > div h3.em {
+        background-position: 50% 100%;
+        padding-bottom: 17.5px; }
+      #content .text-block .columnar > div p, #content .text-block .columnal > div p {
+        font: 300 14px/26px museo-sans, sans-serif; }
+      #content .text-block .columnar > div p:not(:last-child), #content .text-block .columnal > div p:not(:last-child) {
+        margin-bottom: 26px; }
+    #content .text-block .columnar > div:first-child,
+    #content .text-block .columnar > div:last-child, #content .text-block .columnal > div:first-child,
+    #content .text-block .columnal > div:last-child {
+      padding: 0; }
+    #content .text-block .columnar > div:not(:first-child), #content .text-block .columnal > div:not(:first-child) {
+      padding-top: 70px; }
+  #content .text-block .region:first-child,
+  #content .text-block .columnar:first-child,
+  #content .text-block .columnal:first-child {
+    padding-top: 125px; }
+  #content .text-block .region:last-child,
+  #content .text-block .columnar:last-child,
+  #content .text-block .columnal:last-child {
+    padding-bottom: 125px; }
+  #content .section.text-block:first-child {
+    padding-top: 50px; }
+  #content a.next-section {
+    height: 58px;
+    margin-left: -30px;
+    width: 60px; }
+  #content .banner .image .caption, #content .banner-block .image .caption {
+    bottom: 15px;
+    left: 30px; }
+    #content .banner .image .caption h2, #content .banner-block .image .caption h2 {
+      font: 400 20px/20px tahoma, serif; }
+    #content .banner .image .caption p, #content .banner-block .image .caption p {
+      font: 300 12px/20px museo-sans, sans-serif; }
+  #content .banner .navigation-container .navigation, #content .banner-block .navigation-container .navigation {
+    height: 60px;
+    width: 60px; }
+    #content .banner .navigation-container .navigation span, #content .banner-block .navigation-container .navigation span {
+      background-size: 8px 60px;
+      height: 30px;
+      margin-top: -15px;
+      width: 60px; }
+  #content .banner .navigation-container .navigation-previous span, #content .banner-block .navigation-container .navigation-previous span {
+    background-position: 50% -30px; }
+  #content .banner .navigation-container .navigation-next span, #content .banner-block .navigation-container .navigation-next span {
+    background-position: 50% 0; }
+  #content .infin-home-logo {
+    margin-left: -125px;
+    margin-top: -13px; }
+    #content .infin-home-logo img {
+      width: 250px; }
+  #content .text-block.journal-preamble .region {
+    padding-bottom: 140px; }
+  #content .journal-entries:first-child {
+    padding-top: 125px; }
+  #content .text-block.journal-entry .region {
+    padding: 0; }
+  #content .journal-entry.journal-main {
+    padding-top: 175px !important; }
+  #content .journal-entry {
+    margin-bottom: 100px; }
+    #content .journal-entry .region {
+      max-width: 450px;
+      width: auto; }
+      #content .journal-entry .region h1, #content .journal-entry .region h2 {
+        font: 400 26px/1.2em tahoma, serif;
+        margin-bottom: 35px; }
+      #content .journal-entry .region .journal-article {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+        padding-bottom: 100px;
+        text-align: center; }
+        #content .journal-entry .region .journal-article p {
+          font: 300 14px/26px museo-sans, sans-serif; }
+        #content .journal-entry .region .journal-article p:not(:last-child) {
+          margin-bottom: 26px; }
+    #content .journal-entry .read-more {
+      margin-top: 100px; }
+      #content .journal-entry .read-more a {
+        font: 500 12px/1em brandon-grotesque; }
+  #content .journal-entries div.journal-entry:not(:first-child) {
+    padding-top: 100px; }
+  #content .journal-paging {
+    margin-bottom: 100px; }
+    #content .journal-paging ul li {
+      margin: 0 40px; }
+      #content .journal-paging ul li a {
+        display: block;
+        height: 85px;
+        width: 85px; }
+      #content .journal-paging ul li a.paging-previous {
+        background-position: 100% 0; }
+      #content .journal-paging ul li a.paging-previous.disabled {
+        background-position: 100% -85px; }
+      #content .journal-paging ul li a.paging-next {
+        background-position: 0 -170px; }
+      #content .journal-paging ul li a.paging-next.disabled {
+        background-position: 0 -255px; } }
+
+@media screen and (max-width: 719px) {
+  .wrapper {
+    padding: 0 30px; }
+  header#page-header .infin-masthead-logo {
+    height: 48px;
+    left: 30px;
+    position: absolute;
+    top: 20px;
+    width: 150px; }
+  header#page-header .infin-toc-link {
+    height: 48px;
+    right: 20px;
+    top: 20px;
+    width: 52px; }
+  html.about header#page-header .infin-masthead-logo {
+    background-size: 150px; }
+    html.about header#page-header .infin-masthead-logo a {
+      height: 48px;
+      width: 150px; }
+  footer#page-footer h2.logo {
+    padding: 120px 0;
+    text-align: left; }
+    footer#page-footer h2.logo span {
+      background-size: 150px 15px;
+      height: 15px;
+      width: 150px; }
+  footer#page-footer .footer {
+    padding: 18px 0 20px; }
+    footer#page-footer .footer .lets-be-social, footer#page-footer .footer .legal {
+      text-align: left; }
+    footer#page-footer .footer .legal span {
+      display: block; }
+    footer#page-footer .footer span {
+      font: 300 1.2em/1.66em museo-sans, sans-serif; }
+    footer#page-footer .footer span:not(:last-child) {
+      margin-right: 17px; }
+  nav#main-nav ul li a {
+    font: 400 2.6em/1.31em tahoma, serif; }
+  nav#main-nav button#close-bn {
+    height: 48px;
+    right: 20px;
+    top: 20px;
+    width: 52px; }
+  #content .pre-footer {
+    font: 400 1.8em/1.66em tahoma, serif;
+    padding: 40px 30px; }
+  #content .our-project-portfolio .item {
+    width: 100%; }
+    #content .our-project-portfolio .item a .overlay h2 {
+      font: 300 1.4em/1em museo-sans, sans-serif; }
+    #content .our-project-portfolio .item a .overlay h3 {
+      font: 300 1.2em/1.66em museo-sans, sans-serif; }
+  #content .text-block .region {
+    width: 70%; }
+  #content .text-block h1, #content .text-block h2 {
+    font: 500 11px/34px brandon-grotesque; }
+  #content .text-block p {
+    font: 400 26px/34px tahoma, serif; }
+  #content .text-block p.em {
+    font: 300 12px/34px museo-sans, sans-serif; }
+  #content .text-block p.link {
+    font: 500 11px/34px brandon-grotesque; }
+  #content .text-block .columnar, #content .text-block .columnal {
+    max-width: 70%;
+    padding-top: 70px; }
+    #content .text-block .columnar > div h3, #content .text-block .columnal > div h3 {
+      font: 500 26px/1.2em tahoma, serif;
+      margin-bottom: 17.5px; }
+    #content .text-block .columnar > div h3.em, #content .text-block .columnal > div h3.em {
+      background-position: 50% 100%;
+      padding-bottom: 17.5px; }
+    #content .text-block .columnar > div p, #content .text-block .columnal > div p {
+      font: 300 14px/26px museo-sans, sans-serif; }
+  #content .text-block .region:first-child,
+  #content .text-block .columnar:first-child,
+  #content .text-block .columnal:first-child {
+    padding-top: 100px; }
+  #content .text-block .region:last-child,
+  #content .text-block .columnar:last-child,
+  #content .text-block .columnal:last-child {
+    padding-bottom: 100px; }
+  #content .section.text-block:first-child {
+    padding-top: 25px; }
+  #content a.next-section {
+    height: 58px;
+    margin-left: -30px;
+    width: 60px; }
+  #content .banner .image .caption, #content .banner-block .image .caption {
+    display: none; }
+  #content .banner .navigation-container, #content .banner-block .navigation-container {
+    display: none; }
+  #content .infin-home-logo {
+    margin-left: -100px;
+    margin-top: -10px; }
+    #content .infin-home-logo img {
+      width: 200px; }
+  #content .text-block.journal-preamble .region {
+    padding-bottom: 120px; }
+  #content .journal-entries:first-child {
+    padding-top: 100px; }
+  #content .text-block.journal-entry .region {
+    padding: 0; }
+  #content .journal-entry.journal-main {
+    padding-top: 125px !important; }
+  #content .journal-entry {
+    margin-bottom: 80px; }
+    #content .journal-entry .region {
+      width: 70%; }
+      #content .journal-entry .region h1, #content .journal-entry .region h2 {
+        font: 400 26px/1.2em tahoma, serif;
+        margin-bottom: 35px; }
+      #content .journal-entry .region .journal-article {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+        padding-bottom: 80px; }
+        #content .journal-entry .region .journal-article p {
+          font: 300 14px/26px museo-sans, sans-serif; }
+        #content .journal-entry .region .journal-article p:not(:last-child) {
+          margin-bottom: 26px; }
+    #content .journal-entry .read-more {
+      margin-top: 80px; }
+      #content .journal-entry .read-more a {
+        font: 500 11px/1em brandon-grotesque; }
+  #content .journal-entries div.journal-entry:not(:first-child) {
+    padding-top: 80px; }
+  #content .journal-paging {
+    margin-bottom: 80px; }
+    #content .journal-paging ul li {
+      margin: 0 40px; }
+      #content .journal-paging ul li a {
+        background-size: 21px 160px;
+        display: block;
+        height: 40px;
+        width: 40px; }
+      #content .journal-paging ul li a.paging-previous {
+        background-position: 100% 0; }
+      #content .journal-paging ul li a.paging-previous.disabled {
+        background-position: 100% -40px; }
+      #content .journal-paging ul li a.paging-next {
+        background-position: 0 -80px; }
+      #content .journal-paging ul li a.paging-next.disabled {
+        background-position: 0 -120px; } }
+

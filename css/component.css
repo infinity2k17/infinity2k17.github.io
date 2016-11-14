@@ -1,0 +1,223 @@
+/* Set all parents to full height */
+html, body, 
+.container,
+.cbp-fbscroller,
+.cbp-fbscroller section { 
+	height: 100%;
+}
+
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+	position: fixed;
+	z-index: 9999;
+	right: 50px;
+	top: 50%;
+	width: 14px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.cbp-fbscroller > nav a {
+	display: block;
+	position: relative;
+	z-index: 9999;
+	color: transparent;
+	width: 14px;
+	height: 14px;
+	outline: none;
+	margin: 18px 0;
+	border-radius: 50%;
+	border: 1px solid rgba(255,255,255,0.6);
+	transition:0.2s all linear;
+}
+
+.no-touch .cbp-fbscroller > nav a:hover {
+	background: rgba(255,255,255,0.6);
+	transition:0.2s all linear;
+}
+
+.cbp-fbscroller > nav a.cbp-fbcurrent {
+	background: #dedfe0;
+}
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.no-touch .cbp-fbscroller section {
+	background-attachment: fixed;
+}
+
+#fbsection1 {
+	background:linear-gradient(to top left, #414345 10%,#232526 60%);
+}
+
+#solar {
+	background: url(../images/solar.png) #1f2a30;
+	background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: static;
+	transition: 1s ease-in-out;
+
+}
+
+#solar h2 {
+	color: #e82737;
+}
+
+#solar hr {
+	color: #e82737;
+	background: #e82737;
+}
+
+
+#solar .info {
+
+	background: rgba(24, 33, 38, 0.9);
+
+}
+
+#ruben {
+	background: url(../images/ruben.png) #151515;
+	background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: static;
+	transition: 1s ease-in-out;
+
+}
+
+#ruben h2 {
+	color: #ff6102;
+}
+
+#ruben hr {
+	color: #ff6102;
+	background: #ff6102;
+}
+
+
+#ruben .info {
+
+	background: rgba(21, 21, 21, 0.9);
+
+}
+
+#multi {
+	background: url(../images/multitouch.png) #30444f;
+	background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: static;
+	transition: 1s ease-in-out;
+
+}
+
+
+
+
+.hover {
+	background: #000;
+	background-position: 35% 50%!important;
+	transition: 0.2s ease-in-out;
+
+}
+
+#multi .info {
+	background: rgba(48, 68, 79, 0.8);
+
+}
+
+#gesture {
+	background: url(../images/gesture.png) #556066;
+	background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: static;
+	transition: 1s ease-in-out;
+
+}
+
+
+
+#gesture .info {
+	background: rgba(85, 96, 102, 0.9);
+
+}
+
+
+#cymatics {
+	background: url(../images/cyamatics.png) #535354;
+		background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: static;
+	transition: 1s ease-in-out;
+}
+
+#cymatics .info {
+	background: rgba(83, 83, 84, 0.9);
+
+}
+
+#cymatics h2 {
+	color: #d5e7f3;
+}
+
+#cymatics hr {
+	color: #d5e7f3;
+	background: #d5e7f3;
+}
+
+#touchless {
+	background: url(../images/3d.jpg) #2D353F;
+		background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: static;
+
+		transition: 1s ease-in-out;
+}
+
+#touchless .info {
+	background: rgba(59, 72, 88, 0.9);
+
+}
+
+#touchless h2 {
+	color: #ccc4ae;
+}
+
+#touchless hr {
+	color: #ccc4ae;
+	background: #ccc4ae;
+}
+
+#fbsection5 {
+	
+	background-color: #fff;
+}
+
+#avatar {
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+}
+
+#fbsection8 {
+	background: #fff
+}
